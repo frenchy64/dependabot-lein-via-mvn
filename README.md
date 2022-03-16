@@ -2,7 +2,7 @@
 
 Unfortunately, as of March 2022, plans have stalled to add official support Clojure support to Dependabot.
 
-Jurre Stender from GitHub has been working closely with the Clojure community and broke the news in Clojurians Slack channel `#dependabot-core`.
+Jurre Stender from GitHub has been working closely with the Clojure community explains (via Clojurians Slack channel `#dependabot-core`).
 
 > It’s not necessarily a technical issue, it’s just that our team (at GitHub) is not ready to accept more ecosystems to support.
 
