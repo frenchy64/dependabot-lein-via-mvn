@@ -8,7 +8,10 @@
   <name>example</name>
   <description/>
   <scm>
-    <tag>HEAD</tag>
+    <url>https://github.com/frenchy64/dependabot-lein-via-mvn</url>
+    <connection>scm:git:git://github.com/frenchy64/dependabot-lein-via-mvn.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/frenchy64/dependabot-lein-via-mvn.git</developerConnection>
+    <tag>af80d66fb7bb1cc009fc4fd2b9780ca9a343aecd</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -56,7 +59,7 @@
     <dependency>
       <groupId>org.clojure</groupId>
       <artifactId>clojure</artifactId>
-      <version>1.10.</version>
+      <version>1.10.0</version>
     </dependency>
   </dependencies>
 </project>
