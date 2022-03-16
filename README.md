@@ -1,11 +1,15 @@
 # Leiningen Dependabot support via Maven
 
-This repository demonstrates how you use dependabot's to (mostly) help
+This repository demonstrates how you use dependabot to help
 manage Leiningen project dependencies. The basic idea is to use `lein pom`
 to generate a `pom.xml` for dependabot to inspect.
 
-The downside is that the PR's sent by dependabot are not immediately mergable.
+The downside is that the PR's sent by dependabot are not mergable, as they
+modify the `pom.xml` instead of the `project.clj`.
 To compensate, this setup will make GitHub Actions fail in dependabot's PRs until you fix them yourself.
+
+This way, you get most of the benefits of dependabot (rich diffs, security notices), with a few guard rails
+to prevent otherwise easy-to-make mistakes that come with this approach.
 
 ## Usage
 
