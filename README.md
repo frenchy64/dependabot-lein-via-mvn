@@ -8,12 +8,12 @@ The downside is that the PR's sent by dependabot are not mergable, as they
 modify the `pom.xml` instead of the `project.clj`.
 To compensate, this setup will make GitHub Actions fail in dependabot's PRs until you fix them yourself.
 
-This way, you get most of the benefits of dependabot (rich diffs, security notices), with a few guard rails
+This way, you get many of the benefits of dependabot (rich diffs, security notices), with a few guard rails
 to prevent otherwise easy-to-make mistakes that come with this approach.
 
 ## Usage
 
-Assuming you have a Leiningen project ready to go, adding dependabot support is a matter of
+Assuming you have a Leiningen project in a git repo ready to go, adding dependabot support is a matter of
 copying some files and code from this repo.
 
 1. Copy `.github/dependabot.yml` to your repo. Notice that we've configured the `dependabot` as a Maven repository.
@@ -22,3 +22,5 @@ copying some files and code from this repo.
 4. Add a call to `./script/check-dependabot` in your CI build. It will fail if `dependabot/pom.xml` is out of date.
    - see `.github/workflows/build.yml` for an example
 5. Commit and push.
+
+CI failures will now force you to keep `project.clj` and `pom.xml` up-to-date (via `./script/sync-dependabot`).
