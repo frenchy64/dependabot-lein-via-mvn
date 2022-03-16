@@ -1,10 +1,13 @@
 # Leiningen Dependabot support via Maven
 
-Unfortunately, as of March 2022, plans have stalled to add official support for Dependabot for Clojure.
-Jurre Stender from GitHub reports that dependabot is prohibitively unpleasant to integrate with, with
-no resources to improve it.
+Unfortunately, as of March 2022, plans have stalled to add official support Clojure support to Dependabot.
+
+Jurre Stender from GitHub has been working closely with the Clojure community and broke the news in Clojurians Slack channel `#dependabot-core`.
 
 > It’s not necessarily a technical issue, it’s just that our team (at GitHub) is not ready to accept more ecosystems to support.
+
+Jurre Stender says that dependabot is prohibitively unpleasant to integrate with, with no resources to improve it at GitHub.
+
 > We’ve ran an experiment with the Dart team who have implemented most of this functionality in their package manager (pub), but it turned out to be a pretty complicated implementation that we didn’t feel comfortable asking other maintainers to follow. Given our teams priorities we won’t have time to make dependabot-core easier to implement against at this time.
 
 In Clojure, we're used to piggiebacking off the success of Java, so
