@@ -1,6 +1,6 @@
 # Leiningen Dependabot support via Maven
 
-Unfortunately, as of March 2022, plans have stalled to add official support Clojure support to Dependabot.
+Unfortunately, as of March 2022, plans have stalled to officially support Clojure in Dependabot.
 
 Jurre Stender from GitHub has been working closely with the Clojure community (via Clojurians Slack channel `#dependabot-core`):
 
