@@ -1,7 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 
 lein pom
-sed '/<tag>/d' pom.xml > dependabot/pom.xml
+SHA=$(git rev-parse HEAD)
+sed "/<tag>${SHA}<\/tag>/d" pom.xml > dependabot/pom.xml
 rm pom.xml

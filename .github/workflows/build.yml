@@ -14,6 +14,7 @@ env:
   ACTION_CACHE_VERSION: 'v1'
 
 jobs:
+  # download deps, check dependabot's pom.xml is up-to-date
   setup:
     runs-on: ubuntu-latest
     steps:
@@ -36,6 +37,7 @@ jobs:
         run: |
           ./script/sync-dependabot
           git diff --exit-code dependabot/pom.xml
+  # example test matrix
   test:
     needs: setup
     strategy:
