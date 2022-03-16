@@ -1,0 +1,7 @@
+#!/bin/bash
+# Check that project.clj is in sync with the committed dependabot pom.xml.
+
+set -e
+
+./script/sync-dependabot
+git diff --exit-code dependabot/pom.xml

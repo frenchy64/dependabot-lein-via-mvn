@@ -34,9 +34,7 @@ jobs:
         with:
           lein: 2.9.8
       - name: Check dependabot is in sync with project.clj
-        run: |
-          ./script/sync-dependabot
-          git diff --exit-code dependabot/pom.xml
+        run: ./script/check-dependabot
   # example test matrix
   test:
     needs: setup
