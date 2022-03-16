@@ -27,3 +27,5 @@ CI failures will now force you to keep [project.clj](project.clj) and [dependabo
 
 Finally, to activate dependabot on your repo, go to `https://github.com/<user>/<repo>/settings/security_analysis` and activate
 the security and analysis tools you are interested in.
+
+To force dependabot to run the first time, go to `https://github.com/<user>/<repo>/network/updates`, click on the "Last checked" link to the right of `dependabot/pom.xml`, and then `Check for Updates`.
