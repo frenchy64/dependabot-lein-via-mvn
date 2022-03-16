@@ -24,3 +24,6 @@ copying some files and code from this repo.
 5. Commit and push.
 
 CI failures will now force you to keep `project.clj` and `pom.xml` up-to-date (via `./script/sync-dependabot`).
+
+Finally, oo activate dependabot on your repo, go to `https://github.com/<user>/<repo>/settings/security_analysis` and activate
+the security and analysis tools you are interested in.
