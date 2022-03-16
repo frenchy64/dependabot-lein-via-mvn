@@ -1,5 +1,9 @@
 # Leiningen Dependabot support via Maven
 
+Unfortunately, as of March 2022, there are no plans to add official support for Dependabot for Clojure.
+Clojure teaches us there's no shame in piggiebacking on the success of others (well, Java). So
+in that spirit, let's lower out expectations slightly and open a backdoor via Maven.
+
 This repository demonstrates how you use dependabot to help
 manage Leiningen project dependencies. The basic idea is to use `lein pom`
 to generate a `pom.xml` for dependabot to inspect.
