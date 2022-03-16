@@ -1,8 +1,16 @@
 # Leiningen Dependabot support via Maven
 
-Unfortunately, as of March 2022, there are no plans to add official support for Dependabot for Clojure.
-Clojure teaches us there's no shame in piggiebacking on the success of others (well, Java). So
-in that spirit, let's lower out expectations slightly and open a backdoor via Maven.
+Unfortunately, as of March 2022, plans have stalled to add official support for Dependabot for Clojure.
+Jurre Stender from GitHub reports that dependabot is prohibitively unpleasant to integrate with, with
+no resources to improve it.
+
+> It’s not necessarily a technical issue, it’s just that our team (at GitHub) is not ready to accept more ecosystems to support.
+> We’ve ran an experiment with the Dart team who have implemented most of this functionality in their package manager (pub), but it turned out to be a pretty complicated implementation that we didn’t feel comfortable asking other maintainers to follow. Given our teams priorities we won’t have time to make dependabot-core easier to implement against at this time.
+
+In Clojure, we're used to piggiebacking off the success of Java, so
+in that spirit let's lower expectations slightly and access dependabot via Maven.
+
+## Overview
 
 This repository demonstrates how you use dependabot to help
 manage Leiningen project dependencies. The basic idea is to use `lein pom`
