@@ -1,4 +1,7 @@
 #!/bin/sh
 
+set -e
+
 lein pom
-mv pom.xml dependabot
+sed '/<tag>/d' pom.xml > dependabot/pom.xml
+rm pom.xml
