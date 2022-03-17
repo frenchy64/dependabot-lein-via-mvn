@@ -33,6 +33,10 @@ jobs:
         uses: DeLaGuardo/setup-clojure@3.5
         with:
           lein: 2.9.8
+      - name: Setup Babashka
+        uses: turtlequeue/setup-babashka@v1
+        with:
+          babashka-version: 0.7.8
       - name: Check dependabot is in sync with project.clj
         run: ./script/check-dependabot
   # example test matrix

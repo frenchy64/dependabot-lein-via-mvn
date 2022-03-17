@@ -6,5 +6,6 @@ SHA=$(git rev-parse HEAD)
 
 lein pom
 mkdir -p dependabot
-sed "/<tag>${SHA}<\/tag>/d" pom.xml > dependabot/pom.xml
-rm pom.xml
+mv pom.xml dependabot
+# lein pom uses the origin git remote to add metadata. remove for reproducibility.
+bb '(spit "dependabot/pom.xml" (-> "dependabot/pom.xml" slurp xml/parse-str (update :content (partial remove #(some-> % :tag name #{"scm" "url"}))) xml/emit-str))'
