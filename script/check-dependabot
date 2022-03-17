@@ -3,7 +3,7 @@
 
 set -e
 
-./scripts/sync-dependabot
+./script/sync-dependabot
 if git diff --ignore-all-space --exit-code dependabot/pom.xml ; then
   echo 'project.clj and pom.xml are in sync.'
   exit 0
