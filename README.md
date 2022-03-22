@@ -13,6 +13,10 @@ He explains dependabot is prohibitively unpleasant to integrate with, with no re
 In Clojure, we're used to piggiebacking off the success of Java, so
 in that spirit let's lower expectations slightly and access dependabot via Maven.
 
+## See also
+
+- [dependabot support for Clojure CLI](https://github.com/frenchy64/dependabot-clojure-cli-via-mvn)
+
 ## Overview
 
 This repository demonstrates how you use dependabot to help
