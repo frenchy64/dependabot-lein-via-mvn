@@ -58,7 +58,7 @@
     <dependency>
       <groupId>org.clojure</groupId>
       <artifactId>core.logic</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
   </dependencies>
 </project>
