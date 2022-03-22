@@ -43,7 +43,7 @@ copying some files and code from this repo.
 
 CI failures will now force you to keep [project.clj](project.clj) and [dependabot/pom.xml](dependabot/pom.xml) synchronized (via [script/sync-dependabot](script/sync-dependabot)).
 
-Finally, to activate dependabot on your repo, follow [these](https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/configuring-dependabot-security-updates#enabling-or-disabling-dependabot-security-updates-for-an-individual-repository) instructions. In short, go to `https://github.com/<YOUR USER>/<YOUR REPO>/settings/security_analysis` and activate
-the security and analysis tools you are interested in.
+Finally, to activate dependabot on your repo, follow [these](https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/configuring-dependabot-security-updates#enabling-or-disabling-dependabot-security-updates-for-an-individual-repository) instructions. In short, go to `https://github.com/<USER>/<REPO>/settings/security_analysis` and activate
+the security and analysis tools you are interested in. You must be an admin--if you're preparing a pull-request for a repo that you're not an admin of, you can first fork the repo to test out dependabot on your own fork, and then I suggest asking the maintainer to enable dependabot themselves.
 
 To force dependabot to run the first time, go to `https://github.com/<YOUR USER>/<YOUR REPO>/network/updates`, click on the "Last checked" link to the right of `dependabot/pom.xml`, and then `Check for Updates`.
