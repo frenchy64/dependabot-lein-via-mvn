@@ -50,7 +50,7 @@ To force dependabot to run the first time, go to `https://github.com/<YOUR USER>
 
 ## Workflow hints
 
-Most of the time it will be easy to update the dependabot directly from GitHub's UI.
+Most of the time it will be easy to update the dependabot PR directly from GitHub's UI to be mergable.
 
 1. At the top of the dependabot PR, it will show a link to the `tree` view of the upstream branch. Click on it.
   - eg., in [this](https://github.com/frenchy64/dependabot-lein-via-mvn/pull/2) PR, click on the link at the end of `dependabot wants to merge 2 commits into main from dependabot/maven/dependabot/org.clojure-clojure-1.10.3`
