@@ -57,5 +57,6 @@ Most of the time it will be easy to update the dependabot PR directly from GitHu
 2. You should be at (for example) `https://github.com/frenchy64/dependabot-lein-via-mvn/tree/dependabot/maven/dependabot/org.clojure-clojure-1.10.3`.
 3. To edit the file, go to `https://github.com/frenchy64/dependabot-lein-via-mvn/edit/dependabot/maven/dependabot/org.clojure-clojure-1.10.3/project.clj`.
   - some ways to do this:
-    - press `t` and type `project.clj` and press enter, then click the "Edit this file" button
+    1. press `t` and type `project.clj` and press enter, then click the "Edit this file" button, or
+    2. change `tree` to `edit` and add `/project.clj` to the end of the URL.
 4. Now make the `project.clj` reflect the new `dependabot/pom.xml` version, and press `Commit changes` at the bottom of the page to commit directly to the branch.
