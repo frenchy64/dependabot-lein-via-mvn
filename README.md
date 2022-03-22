@@ -33,11 +33,12 @@ copying some files and code from this repo.
 
 1. Copy [.github/dependabot.yml](.github/dependabot.yml) to your repo. Notice that we've configured the `dependabot` directory as a Maven project--this is where our fake Maven project will live.
 2. Copy [script/sync-dependabot](script/sync-dependabot) and [script/check-dependabot](script/check-dependabot) to your repo.
+   - make sure they're executable: run `chmod +x script/sync-dependabot script/check-dependabot`
 3. Call `./script/sync-dependabot` in your repository root. Commit the generated [dependabot/pom.xml](dependabot/pom.xml).
    - requires [babashka](https://github.com/babashka/babashka)
 4. Add a call to `./script/check-dependabot` in your CI build. It will fail if [dependabot/pom.xml](dependabot/pom.xml) is out of date.
    - requires [babashka](https://github.com/babashka/babashka)
-   - see [.github/workflows/build.yml](.github/workflows/build.yml) for an example, including a babashka installer
+   - see the end of the `setup` job in [.github/workflows/build.yml](.github/workflows/build.yml) for an example, which uses a babashka installer
 5. Commit and push.
 
 CI failures will now force you to keep [project.clj](project.clj) and [dependabot/pom.xml](dependabot/pom.xml) synchronized (via [script/sync-dependabot](script/sync-dependabot)).
