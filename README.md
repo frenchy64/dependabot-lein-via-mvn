@@ -47,3 +47,15 @@ Finally, to activate dependabot on your repo, follow [these](https://docs.github
 the security and analysis tools you are interested in. You must be an admin--if you're preparing a pull-request for a repo that you're not an admin of, you can first fork the repo to test out dependabot on your own fork, and then I suggest asking the maintainer to enable dependabot themselves.
 
 To force dependabot to run the first time, go to `https://github.com/<YOUR USER>/<YOUR REPO>/network/updates`, click on the "Last checked" link to the right of `dependabot/pom.xml`, and then `Check for Updates`.
+
+## Workflow hints
+
+Most of the time it will be easy to update the dependabot directly from GitHub's UI.
+
+1. At the top of the dependabot PR, it will show a link to the `tree` view of the upstream branch. Click on it.
+  - eg., in [this](https://github.com/frenchy64/dependabot-lein-via-mvn/pull/2) PR, click on the link at the end of `dependabot wants to merge 2 commits into main from dependabot/maven/dependabot/org.clojure-clojure-1.10.3`
+2. You should be at (for example) `https://github.com/frenchy64/dependabot-lein-via-mvn/tree/dependabot/maven/dependabot/org.clojure-clojure-1.10.3`.
+3. To edit the file, go to `https://github.com/frenchy64/dependabot-lein-via-mvn/edit/dependabot/maven/dependabot/org.clojure-clojure-1.10.3/project.clj`.
+  - some ways to do this:
+    - press `t` and type `project.clj` and press enter, then click the "Edit this file" button
+4. Now make the `project.clj` reflect the new `dependabot/pom.xml` version, and press `Commit changes` at the bottom of the page to commit directly to the branch.
