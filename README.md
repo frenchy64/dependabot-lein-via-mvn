@@ -46,6 +46,8 @@ CI failures will now force you to keep [project.clj](project.clj) and [dependabo
 Finally, to activate dependabot on your repo, follow [these](https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/configuring-dependabot-security-updates#enabling-or-disabling-dependabot-security-updates-for-an-individual-repository) instructions. In short, go to `https://github.com/<USER>/<REPO>/settings/security_analysis` and activate
 the security and analysis tools you are interested in. You must be an admin--if you're preparing a pull-request for a repo that you're not an admin of, you can first fork the repo to test out dependabot on your own fork, and then I suggest asking the maintainer to enable dependabot themselves.
 
+To simulate the "admin" experience or to test out dependabot, you can fork this repo and go to `https://github.com/<USER>/<REPO>/settings/security_analysis`.
+
 To force dependabot to run the first time, go to `https://github.com/<YOUR USER>/<YOUR REPO>/network/updates`, click on the "Last checked" link to the right of `dependabot/pom.xml`, and then `Check for Updates`.
 
 ## Workflow hints
