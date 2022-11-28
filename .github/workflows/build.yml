@@ -30,7 +30,7 @@ jobs:
           distribution: 'temurin'
           java-version: 11
       - name: Install clojure tools
-        uses: DeLaGuardo/setup-clojure@4.0
+        uses: DeLaGuardo/setup-clojure@10.1
         with:
           lein: 2.9.8
       - name: Setup Babashka
@@ -57,7 +57,7 @@ jobs:
           distribution: 'temurin'
           java-version: ${{ matrix.java }}
       - name: Install clojure tools
-        uses: DeLaGuardo/setup-clojure@4.0
+        uses: DeLaGuardo/setup-clojure@10.1
         with:
           lein: 2.9.8
       - run: lein test
